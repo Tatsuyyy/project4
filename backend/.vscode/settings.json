@@ -6,11 +6,18 @@
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length",
-        "119"
+        "119",
     ],
+    "python.linting.flake8Args": [
+        "--ignore=E501",
+        "--max-line-length=119",
+        "--max-complexity=20"
+    ],
+    
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": true,
+        "source.fixAll": true
     },
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#2a2a2a",
