@@ -47,8 +47,8 @@ INSTALLED_APPS = [
 
 INSTALLED_APPS += [
     'graphene_django',
-    'sample.apps.SampleConfig',
-    # 'earap.apps.EarapConnfig',
+    # 'sample.apps.SampleConfig',
+    'earap.apps.EarapConfig',
 ]
 
 MIDDLEWARE = [
