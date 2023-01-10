@@ -60,7 +60,7 @@ class Steps(models.Model):
     elem = models.ForeignKey(Elems, models.DO_NOTHING)
     value = models.CharField(max_length=50)
     order_num = models.SmallIntegerField()
-    project_id = models.PositiveIntegerField()
+    project_id = models.ForeignKey(Projects, models.DO_NOTHING)
 
     class Meta:
         db_table = 'steps'
