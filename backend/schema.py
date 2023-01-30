@@ -1,9 +1,9 @@
 import graphene
 
-import sample.schema
+import earap.schema
 
 
-class Query(sample.schema.Query, graphene.ObjectType):
+class Query(earap.schema.Query, graphene.ObjectType):
     pass
 
 
